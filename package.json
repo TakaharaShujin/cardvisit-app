@@ -1,0 +1,39 @@
+{
+  "name": "cardvisit-app",
+  "version": "1.0.0",
+  "description": "Cardvisit App Front-end",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Üsame Fethullah AVCI <usameavci@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.9",
+    "bower": "^1.7.9",
+    "browser-sync": "^2.14.0",
+    "browser-sync-spa": "^1.0.3",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-banner": "^0.1.3",
+    "gulp-concat": "^2.6.0",
+    "gulp-filter": "^4.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "http-proxy-middleware": "^0.17.1",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.1",
+    "main-bower-files": "^2.13.1",
+    "shelljs": "^0.7.3",
+    "ui-router": "^1.0.0-alpha.3"
+  }
+}

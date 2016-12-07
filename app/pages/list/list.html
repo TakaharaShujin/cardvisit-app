@@ -1,0 +1,25 @@
+<div class="quick-search">
+  <div class="input-group">
+    <div class="input-group-btn">
+      <a data-ui-sref="app.newcard" class="btn btn-primary btn-lg"><i class="fa fa-plus"></i> Yeni Kartvizit</a>
+    </div>
+    <input type="text" class="form-control input-lg" placeholder="Kartvizit ara" ng-model="vm.query">
+  </div>
+</div>
+<div class="row card-list">
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" data-ng-repeat=" item in ( vm.cardListData | filter: vm.query)">
+    <div class="item">
+      <img class="item-image" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ0OVnO8F1ApFM9fHi6SgKOUN_t8DmM1hQhdgwJvrwClC8_8yj0MjYYA" alt="profile image" />
+      <div class="item-explanation">
+        <div class="item-explanation-name"> {{item.name }} {{item.surname}}</div>
+        <div class="item-explanation-phone"> <i class=" fa fa-phone "></i> {{item.phone}} </div>
+        <div class="item-explanation-email"> <i class="fa fa-envelope-o"></i> {{item.email}}</div>
+        <div class="item-explanation-companyName"><i class="fa fa-building-o"></i> {{item.company}} - {{item.company_position}}</div>
+      </div>
+      <div class="actions">
+        <a ng-click="vm.cardDelete(item.id)"> <i class="fa fa-trash-o"></i></a>
+        <a ng-click="vm.cardEdit(item.id)"> <i class="fa fa-pencil"></i></a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Kartvizit Düzenle</h3>
+  </div>
+  <div class="panel-body">
+    <div class="from-horizontal">
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-2 col-md-2 col-lg-2 control-label"> Adı</label>
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+          <input type="text" class="form-control" ng-model="vm.cardForm.name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-2 col-md-2 col-lg-2 control-label"> Soyadı </label>
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+          <input type="text" class="form-control" ng-model="vm.cardForm.surname">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-2 col-md-2 col-lg-2 control-label"> Telefon Numarası </label>
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+          <input type="text" class="form-control" ng-model="vm.cardForm.phone">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-2 col-md-2 col-lg-2 control-label"> Eposta Adresi </label>
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+          <input type="text" class="form-control" ng-model=" vm.cardForm.email ">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-2 col-md-2 col-lg-2 control-label"> Firmada Pozisyonu </label>
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+          <input type="text" class="form-control" ng-model="vm.cardForm.company_position">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="pull-right">
+          <button type="button" type="button" class="btn btn-danger" ng-click="vm.cancel()">Vazgec</button>
+          <button type="button pull-left" type="button" class="btn btn-primary" ng-click="vm.updateCard(vm.cardForm)">Kaydet</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
